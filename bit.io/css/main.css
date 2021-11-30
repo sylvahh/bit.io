@@ -1,0 +1,53 @@
+body{
+
+}
+.d-inline-flex{
+    background-color: transparent;
+}
+.btn-group{
+    /* backgro */
+}
+
+.rounded-edge{
+    border-radius: 10px !important;
+}
+
+.border-dashed{
+    border: 1px dashed rgb(223, 223, 223);
+}
+.btn-style{
+    border: 0px !important;
+    outline: 0px !important;
+    background: rgb(182, 182, 182) !important;
+}
+.btn-style-2{
+    border: 0px !important;
+    outline: 0px !important;
+    background: transparent !important;
+}
+
+.primary-bg{
+    background: #fdbd28 !important;
+}
+
+.btn-background{
+    background: rgba(8, 37, 56, 0.07) !important;
+}
+.secondary-bg{
+    background: rgb(182, 182, 182) !important;
+}
+.blue-bg{
+    background-color: #0056ff;
+}
+.icon-border{
+    background: rgba(231, 229, 229, 0.05) !important;
+}
+.float-div{
+    background-color: rgb(206, 182, 182) !important;
+    padding: 100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: left !important;
+    /* max-width: 20% !important;  */
+    width: 75% !important; 
+}
