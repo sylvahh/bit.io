@@ -1,0 +1,92 @@
+body{
+
+}
+.d-inline-flex{
+    background-color: transparent;
+}
+.btn-group{
+    /* backgro */
+}
+
+.rounded-edge{
+    border-radius: 10px !important;
+}
+.rounded-edge-2{
+    border-radius: 30px !important;
+}
+.font-weight{
+    font-size: 12px;
+}
+
+.border-dashed{
+    border: 1px dashed rgb(223, 223, 223);
+}
+.btn-style{
+    border: 0px !important;
+    outline: 0px !important;
+    background: rgb(182, 182, 182) !important;
+}
+.btn-style-2{
+    border: 0px !important;
+    outline: 0px !important;
+    background:  #28d9aa  !important;
+}
+
+.primary-bg{
+    background: #fdbd28 !important;
+}
+
+.btn-background{
+    background: rgba(8, 37, 56, 0.07) !important;
+}
+.secondary-bg{
+    background: rgb(182, 182, 182) !important;
+}
+.blue-bg{
+    background-color: #0056ff;
+}
+.icon-border{
+    background: rgba(231, 229, 229, 0.712) !important;
+}
+.float-div{
+    background-color: white !important;
+    width: 75%;
+     float: right; 
+    
+
+}
+.float-div-red{
+    background-color: #ee5149 !important;
+    width: 75% !important;
+    float: right !important; 
+    z-index: 1 !important;
+    position: relative !important;
+    top: 100% !important;
+}
+.position-div{
+    margin-left: 100px !important ;
+    margin-right: 175px !important;
+    margin-bottom: -200px;
+
+}
+faq-btn{
+    background: #28d9aa !important;
+
+}
+.position-div-2{
+    margin-top: 350px !important;
+}
+.position-div-3{
+    margin-top: 50px !important;
+}
+.margin-div{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.margin-top{
+    margin-top: 100px;
+}
+.banner-img{
+    transform: scaleY(-1);
+}
