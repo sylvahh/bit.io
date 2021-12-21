@@ -51,30 +51,38 @@ body{
 .float-div{
     background-color: white !important;
     width: 75%;
-     float: right; 
+    float: right; 
     
 
 }
 .float-div-red{
     background-color: #ee5149 !important;
-    width: 75% !important;
+    width: 80% !important;
     float: right !important; 
     z-index: 1 !important;
     position: relative !important;
-    top: 100% !important;
+    border-radius: 30px;
+    /* top: 100% !important; */
 }
 .position-div{
-    margin-left: 100px !important ;
-    margin-right: 175px !important;
-    margin-bottom: -200px;
+    /* margin-left: 100px !important;  */
+    margin-right: 12.5% !important;
+    margin-top: -20% !important;
+    
+
+    
 
 }
-faq-btn{
+.faq-btn{
     background: #28d9aa !important;
 
 }
+.position-div-red{
+    margin-top: 3% !important;
+    margin-right: 12% !important;
+}
 .position-div-2{
-    margin-top: 350px !important;
+    margin-top: 8% !important;
 }
 .position-div-3{
     margin-top: 50px !important;
@@ -88,5 +96,6 @@ faq-btn{
     margin-top: 100px;
 }
 .banner-img{
-    transform: scaleY(-1);
+    transform: scale(-1,-1); 
+    margin-top: -150px;
 }
