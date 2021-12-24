@@ -78,6 +78,7 @@ body{
 
 }
 .position-div-red{
+    
     margin-top: 3% !important;
     margin-right: 12% !important;
 }
@@ -98,4 +99,19 @@ body{
 .banner-img{
     transform: scale(-1,-1); 
     margin-top: -150px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    width: 100% !important;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    /* width: 100%; */
+    z-index: 1;
+    background-color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: inline-block;
 }
