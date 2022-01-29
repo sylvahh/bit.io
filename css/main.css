@@ -1,6 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 body{
+    font-family: 'Comfortaa', cursive !important
+    /* 28d988; */
+}
+/* dropdown font color #788995 header #060f14  background #0000009  logobg  e8edf1*/
+.nav-padding{
+    padding-left: 8px ;
+    padding-right: 8px ;
+}
+.nav-link-color{
+    color: #ffffff !important;
+}
+.dropdown-logo{
+    background-color: #e8edf19c ;
+    height: 50px ; 
+    
+    /* width: 60px; */
+}
+.dropdown-font{
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    color:  #788995 ;
 
 }
+.dropdown-header{
+    font-family: 'Comfortaa', cursive;
+    color:#060f14 ;
+    padding: 0px !important; 
+}
+
+
 .d-inline-flex{
     background-color: transparent;
 }
@@ -24,7 +54,7 @@ body{
 .btn-style{
     border: 0px !important;
     outline: 0px !important;
-    background: rgb(182, 182, 182) !important;
+    background: rgb(241, 239, 239) !important;
 }
 .btn-style-2{
     border: 0px !important;
@@ -108,6 +138,7 @@ body{
 .dropdown-content{
     display: none;
     position: absolute;
+    left: -150px;
     /* width: 100%; */
     z-index: 1;
     background-color: white;
