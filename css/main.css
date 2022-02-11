@@ -30,7 +30,9 @@ body{
     padding: 0px !important; 
 }
 
-
+.nav-logo-border{
+    border-radius: 15px;
+}
 .d-inline-flex{
     background-color: transparent;
 }
@@ -38,6 +40,12 @@ body{
     /* backgro */
 }
 
+.drag-box{
+    cursor: move;
+}
+.drag-box.over{
+    border: 3px dotted black;
+}
 .rounded-edge{
     border-radius: 10px !important;
 }
