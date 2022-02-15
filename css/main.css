@@ -168,7 +168,13 @@ body{
 }
 
 .scroll-bar{
-    overflow: visible;
+    height: 100% !important;
+    overflow: scroll;
+    overflow-x:hidden;
+    /* z-index: 1 !important; */
+    position: fixed;  
+    bottom: auto;
+    top: auto; 
 }
 
 .dc-nav-header{
