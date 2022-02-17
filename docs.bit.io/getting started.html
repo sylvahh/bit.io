@@ -17,7 +17,7 @@
   <main>
     <header>
       <div class="container">
-        <div class="logo" style="background-color: ">
+        <div class="logo">
           <a href="#">
             <img src="../images/2a2f6b0-brand.svg" alt="logo" style="width: 200px" />
           </a>
@@ -339,7 +339,7 @@
                         </p>
                         <div class="row">
                           <div class="col-1">
-                            <P>SQL</P>
+                            <P>Shell</P>
                           </div>
                           <div class="col-11 "></div>
                           <div class="col-11">
@@ -355,11 +355,151 @@
                       <p>where</p>
                       <ul>
                         <li>
-                          
+                          <code><span>$TOKEN</span></code> -  an authentication token, which you can get from clicking "Connect" after you've logged in. 
+                        </li>
+                        <li>
+                          <code><span>$PATH_TO_FILE</span></code>  - the path to the file you want to upload on your local filesystem,
+                        </li>
+                        <li>
+                          <code><span>$USERNAME</span></code> - the username of the owner of the repo.
+                        </li>
+                        <li>
+                          <code><span>$REPO_NAME</span></code> - the name of the repo.
+                        </li>
+                        <li>
+                          <code><span>$TABLE_NAME</span></code> - the name of the table to upload the data to. if this table does not exist, one will be created.
                         </li>
                       </ul>
+                      <p>We'll upload another table from the FHFA: <br> https://www.fhfa.gov/DataTools/Downloads/Documents/HPI/HPI_AT_us_and_census.csv. After downloading the file to our machine, we can push it to the repo with the API as follows:</p>
+                      <div class="row">
+                        <div class="col-1">
+                          <P>shell</P>
+                        </div>
+                        <div class="col-11 "></div>
+                        <div class="col-11">
+                          <pre>curl -i -X POST \
+                            --header 'Authorization: Bearer $TOKEN' \
+                            --header "Content-Disposition: attachment;filename='hpi2.csv'" \
+                            --data-binary @"/Users/bitdotio/downloads/hpi2.csv" \
+                            https://import.bit.io/bitdotio/my-new-repo/hpi_census_div
+                          </pre>
+                        </div>
+                        <div class="col-1"><i class="fad fa-clipboard"></i></div>
+                      </div>
                     </div>
+                    <div class="pt-5">
+                      <p>See here for more details on uploading data with the API.</p>
+                      <div class="pt-2" style="background-color: #fdbd2866; border-left: 2px solid #fdbd28ec;">
+                        <div class="row p-5">
+                          <div class="col-1"><i class="fa-solid fa-circle-exclamation"></i></div>
+                          <div class="col-11 " >
+                            <h3 style="color: rgba(54, 54, 235, 0.61);">API Keys and PostgreSQL Connection Details</h3>
+                            <p>
+                              On any repository page, when you're signed in, you can click on the "connect" button on the upper left to access API keys and PostgreSQL connection details.
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <img src="../images/ae43806-connect_gif.gif" alt="gif">
+                          <figcaption class="text-center">Getting Your API Key.</figcaption>
+                        </div>
+                        <h3 class="pt-3">Downloading Data</h3>
+                        <p class="pt-2">
+                          You can click the "Download Repo" button to download one or more tables from your repository as CSV, JSON, or Excel files. You can find much more information on downloading tables—and query results—<a href="#">here.</a> 
+                        </p>
+                        <div>
+                          <img src="../images/100ba03-ebd53d3-download_csv.gif" alt="gif" width="100%">
+                          <figcaption class="text-center">Download repository tables using the "Download Repo" button.</figcaption>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="p-3">
+                      <h3>Documentation</h3>
+                      <p>
+                        bit.io offers the capability to document your repositories and tables with an in-browser markdown editor. You can document specific columns, provide citations and license information,
+                        and embed images—anything that will help you keep track what your data means or will provide value to other accessing your data (if public). <br>
+
+                        The neiss repository provides a good example of the capabilities of bit.io's documentation editor:
+                      </p>
+                      <div>
+                        <img src="../images/2d5780d-Screen_Shot_2021-09-09_at_2.34.34_PM.png" alt="image" width="100%">
+                        <figcaption>In-browser documentation editor</figcaption>
+                      </div>
+                      <h4 class="pt-2">Connecting to a SQL Client</h4>
+                      <p>
+                        Thus far, we've only accessed our data through the browser interface. But we can do so much more. Do you have a preferred SQL client? You can connect it to bit.io 
+                        in the same way as you'd connect to any other PostgreSQL database. The necessary credentials are under the "POSTGRES" section of the "Connect" menu referenced above. 
+                        Here are some details on connecting via SQL clients: <a href="#">Connecting via SQL Clients.</a><br>
+
+                        For example, here's how the bit.io credentials map onto the PostgresSQL connection in PopSQL.
+                        
+                      </p>
+                      <div>
+                        <img src="../images/f087a61-popsql_connect.png" alt="image" width="100%">
+                        <figcaption class="text-center">Connecting to SQL Clients</figcaption>
+                      </div>
+                      <h4 class="pt-2">what's Next?</h4>
+                      <p>
+                        After reading this guide, you can upload data to bit.io via the browser or the API; 
+                        query data using the in-browser query editor or your favorite SQL client; document your data; 
+                        and modify your tables with the table settings. While this is enough to get started, there's 
+                        much more you can do with bit.io. You can use a bit.io repository as in your data analyses 
+                        with <a href="#">R</a>  or <a href="#">Python;</a>  upload and access your data with the <a href="#"> command line tool,</a> and set up 
+                         <a href="#">automated pipelines</a> to keep your data up to date.
+                      </p>
+                      <p class="pt-3">Our documentation also includes a wealth of example projects which serve as great jumping-off points for your own projects. Two great examples are:</p>
+                      <ul>
+                        <li><a href="#"></a>Examples: LoT and Logging </li>
+                        <li><a href="#">Examples: SQL Queries</a></li>
+                      </ul>
+                      <h3 class="pt-3">Getting Help </h3>
+                      <p class="pt-2">Have you run into an issue not covered by these docs? Have an error message you can't decode? Want to give us some feedback? Help is always one click away!</p>
+                      <div>
+                        <img src="../images/85ba35f-get_help.gif" alt="gif" width="100%">
+                        <figcaption class="text-center">Let us know how we can help!</figcaption>
+                      </div>
+                    </div>
+                    <hr>
                   </div>
+                </div>
+                <div>
+                  <h4>What's Next</h4>
+                  <p>
+                    this has been a whirlwind tour of the core features of bit.io.there is so much more to explore.
+                    browse through the docs for topics relevant to your use case, or check out these articles on popular interogations on bit.io.
+
+                  </p>
+                  <table>
+                    <tr>
+                      <td>
+                        <li>
+                          <a href="#">connecting via R with RPostgres</a>
+                        </li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li>
+                           <a href="#">the phyton SDK</a>
+                        </li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li>
+                           <a href="#">using bit, the command line tool</a>
+                        </li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <li>
+                           <a href="#">connecting via powerBI</a>
+                        </li>
+                       
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>

@@ -39,9 +39,9 @@ body{
 .d-inline-flex{
     background-color: transparent;
 }
-.btn-group{
+/* .btn-group{
     /* backgro */
-}
+
 
 .drag-box{
     cursor: move;
@@ -192,4 +192,7 @@ body{
     color: #666666;
     text-decoration: none !important;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+table, tr, td {
+    border: 1px solid black;
 }
