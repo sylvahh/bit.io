@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap'); 
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif !important;
+    
+}
+
+
+.col-8{
+    /* background-color: #42b3f01c; */
+}
+.col-4{
+    background-color: rgba(255, 255, 255, 0.658);
+}
+
+.doc-nav{
+    color: black;
+    font-size: small;
+    text-decoration: none;
+}
+
+.scroll-bar{
+    height: 100% !important;
+    overflow: scroll;
+    overflow-x:hidden;
+    /* z-index: 1 !important; */
+    position: fixed;  
+    bottom: auto;
+    top: auto; 
+}
+
+.dc-nav-header{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: small;
+    font-weight: 100px;
+    color: #4C555A;
+}
+/* #fdbd2866 */
+.dc-nav-links{
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666666;
+    text-decoration: none !important;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    /* font-family: 'Comfortaa', cursive !important; */
+    padding-top: 5px;
+}
+
+h4{
+    font-weight: 600;
+    padding-top: 4px;
+    text-transform: capitalize;
+    
+}
+h3 {
+    font-weight: 700;
+    padding-top: 4px;
+    text-transform: capitalize;
+    
+}
+div{
+    /* padding-top: 5px; */
+    padding-bottom: 5px;
+}
+
+.div-style {
+    border-left: 3px solid #fdbd28;
+    background-color: #fdbd2866;
+    padding: 5px;
+}
+img{
+    padding-top: 15px;
+}
+
+figcaption{
+    text-align: center;
+}
+h5{
+    color: rgb(101, 101, 247);
+    text-transform: capitalize;
+}

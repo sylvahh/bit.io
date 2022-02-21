@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
 
 body{
     font-family: 'Comfortaa', cursive !important
@@ -161,38 +161,3 @@ body{
 
 /* docs page */
 
-.doc-nav{
-    color: black;
-    font-size: small;
-    text-decoration: none;
-}
-
-.scroll-bar{
-    height: 100% !important;
-    overflow: scroll;
-    overflow-x:hidden;
-    /* z-index: 1 !important; */
-    position: fixed;  
-    bottom: auto;
-    top: auto; 
-}
-
-.dc-nav-header{
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-size: small;
-    font-weight: 100px;
-    color: #4C555A;
-}
-/* #fdbd2866 */
-.dc-nav-links{
-    padding-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #666666;
-    text-decoration: none !important;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-}
-table, tr, td {
-    border: 1px solid black;
-}

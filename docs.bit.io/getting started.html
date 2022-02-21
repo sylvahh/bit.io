@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/1c242f6523.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="doc.css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet" />
   <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.js" defer></script>
 </head>
@@ -53,10 +54,11 @@
     </header>
     <hr />
     <!-- aside -->
-    <div class="container">
+    <div class="container-fluid" style="background-color: #42b3f01c;">
       <div class="row">
-        <div class="col-4">
-          <aside class="scroll-bar">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <aside class="scroll-bar" style=" background-color: #ffffff;">
             <div class="container">
               <nav class="aside-nav">
                 <ul class="nav flex-column">
@@ -109,404 +111,412 @@
           </aside>
         </div>
         <!-- main page -->
-        <div class="col-8" style="float: right">
-          <div class="row">
-            <div class="col-6">
-              <div class="container-fluid justify-content-start">
-                <h3 style="text-align: left"><strong>Getting Started with bit.io</strong></h3>
-                <p style="font-size: 13px">A tour of bit.io's core features</p>
+        <div class=" col-9 justify-content-start">
+          <div container style="padding-left: 50px;" >
+            <div class="row  " >
+              <div class="col-6">
+                <div class="container-fluid justify-content-start">
+                  <h3 style="text-align: left"><strong>Getting Started with bit.io</strong></h3>
+                  <p >A tour of bit.io's core features</p>
+                </div>
+              </div>
+              <div class="col-6">
+                
+                <span style="float: right; "><a href="#" style="color: rgba(0, 0, 0, 0.39); text-decoration: none; "><i class="far fa-edit" ></i>Suggest Edit</a> </span>
               </div>
             </div>
-            <div class="col-6">
-              <span style="float: right">suggestion</span>
-            </div>
-          </div>
-          <hr />
-          <div>
-            <h3><strong>This Guide</strong></h3>
-            <p>
-              This guide will walk you through the basic functionality and concepts of bit.io and will point you
-              toward more detailed documentation on specific topics. After reading this guide, you will have a good
-              understanding of the core features of bit.io, knowledge of what bit.io is and what differentiates it
-              from other database tools, and ideas for where to find more detailed and specific guidance for
-              particular use cases.
-            </p>
-          </div>
-          <div>
-            <h3><strong>What is bit.io?</strong></h3>
-            <h4>The Fastest Way to Get a Database</h4>
-            <p>
-              In short, bit.io is the fastest and easiest way to set up a PostgreSQL database. You can load data to a
-              PostgreSQL database by dragging and dropping files, entering a data file's URL, using the bit.io command
-              line interface tool, sending data from R or Python applications or analyses, or any other Postgres or
-              HTTP client. You can then work with the data via the in-browser SQL editor or any of your favorite data
-              analysis tools: SQL clients, R, Python, Jupyter notebooks, the command line, and more. You can even
-              visualize your data right in the browser.
-            </p>
-          </div>
-          <div>
-            <h4>A Secure, Versatile, Convenient Home for Your Data</h4>
-            <p>
-              Once you've signed up and uploaded your data to a bit.io repository, you have a secure, private database
-              schema where you can upload more data, query and join tables, create views, and add documentation. Want
-              to share your data? You can make the repository public or share with any other user.
-            </p>
-          </div>
-          <div style="border-left: 3px sold#fdbd28; background-color: #fdbd2866">
-            <div class="row">
-              <div class="col-1"><i class="fas fa-info-circle"></i></div>
-              <div class="col-11">
-                <h6>repository</h6>
-                <p>
-                  A bit.io repository is equivalent to a PostgreSQL schema. A schema can contain multiple tables. A
-                  single bit.io user can have multiple repositories (schemas), each containing multiple tables.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h4>why use bit.io?</h4>
-            <p>
-              bit.io offers a full-featured PostgreSQL database that can be used in seconds with practically no
-              configuration required and integrates with an ever-growing number of popular data tools. Any tool that
-              works with Postgres will work with bit.io.
-            </p>
-          </div>
-          <div>
-            <h3>using bit.io</h3>
-            <p>The following sections of this guide will walk you through the core functionality of bit.io.</p>
-            <h4>create an account</h4>
-            <p>
-              While you don't need an account to upload and query your first data file, having an account unlocks
-              additional features, such as higher storage and query limits; data that persists longer than 72 hours;
-              and the ability to access data via the API or some of bit.io's many integrations.
-            </p>
-            <p>
-              To create an account, select "sign up" on the upper right-hand side of the
-              <a href="#"> bit.io home page.</a> Signing up is free!
-            </p>
+            <hr />
             <div>
-              <img src="../images/b791e2a-bitdotio_login.gif" alt="gif" width="100%" />
-              <figcaption style="text-align: center">sign up for a free bit.io account.</figcaption>
-            </div>
-            <div>
-              <h4>Upload Your First Data File</h4>
+              <h3><strong>This Guide</strong></h3>
               <p>
-                If you have a CSV file on your computer, you can use it. Otherwise, we recommend trying it out with
-                the U.S. Federal Housing Finance Association state-level House Price Index data The url is:
-                https://www.fhfa.gov/DataTools/Downloads/Documents/HPI/HPI_AT_state.csv. To upload, simply click
-                "create repo," name the repository, and copy the URL into the "Paste a URL" field. If you already have
-                a CSV, JSON, or Excel file on your computer you'd like to turn into a database table, you can drag and
-                drop the file anywhere on bit.io to upload the data to an existing repository or to a new repository.
+                This guide will walk you through the basic functionality and concepts of bit.io and will point you
+                toward more detailed documentation on specific topics. After reading this guide, you will have a good
+                understanding of the core features of bit.io, knowledge of what bit.io is and what differentiates it
+                from other database tools, and ideas for where to find more detailed and specific guidance for
+                particular use cases.
               </p>
-              <span>You can launch a file picker by clicking "choose file" at the top of the page.</span>
-              <div>
-                <img src="../images/165d76e-create_a_repo_2.gif" alt="gif" width="100%" />
-                <figcaption>upload data by URL</figcaption>
-              </div>
-              <div style="border-left: 3px sold #fdbd28; background-color: #fdbd2866">
-                <div class="row">
-                  <div class="col-1"><i class="fas fa-info-circle"></i></div>
-                  <div class="col-11">
-                    <h6>table header</h6>
-                    <p>
-                      When uploading data, you can select whether the presence of a table header should be
-                      auto-detected, the first row should be used as a table header, or there is no table header. In
-                      this case, auto-detection correctly concluded that there was no table header and assigned
-                      generic column names.
-                    </p>
-                  </div>
+            </div>
+            <div>
+              <h3><strong>What is bit.io?</strong></h3>
+              <h4>The Fastest Way to Get a Database</h4>
+              <p>
+                In short, bit.io is the fastest and easiest way to set up a PostgreSQL database. You can load data to a
+                PostgreSQL database by dragging and dropping files, entering a data file's URL, using the bit.io command
+                line interface tool, sending data from R or Python applications or analyses, or any other Postgres or
+                HTTP client. You can then work with the data via the in-browser SQL editor or any of your favorite data
+                analysis tools: SQL clients, R, Python, Jupyter notebooks, the command line, and more. You can even
+                visualize your data right in the browser.
+              </p>
+            </div>
+            <div>
+              <h4>A Secure, Versatile, Convenient Home for Your Data</h4>
+              <p>
+                Once you've signed up and uploaded your data to a bit.io repository, you have a secure, private database
+                schema where you can upload more data, query and join tables, create views, and add documentation. Want
+                to share your data? You can make the repository public or share with any other user.
+              </p>
+            </div>
+            <div class="container" >
+              <div class="row div-style">
+                <div class="col-1 text-right"><i class="fas fa-info-circle"></i></div>
+                <div class="col-11">
+                  <h6>repository</h6>
+                  <p>
+                    A bit.io repository is equivalent to a PostgreSQL schema. A schema can contain multiple tables. A
+                    single bit.io user can have multiple repositories (schemas), each containing multiple tables.
+                  </p>
                 </div>
               </div>
+            </div>
+            <div>
+              <h4>why use bit.io?</h4>
+              <p>
+                bit.io offers a full-featured PostgreSQL database that can be used in seconds with practically no
+                configuration required and integrates with an ever-growing number of popular data tools. Any tool that
+                works with Postgres will work with bit.io.
+              </p>
+            </div>
+            <div>
+              <h3>using bit.io</h3>
+              <p>The following sections of this guide will walk you through the core functionality of bit.io.</p>
+              <h4>create an account</h4>
+              <p>
+                While you don't need an account to upload and query your first data file, having an account unlocks
+                additional features, such as higher storage and query limits; data that persists longer than 72 hours;
+                and the ability to access data via the API or some of bit.io's many integrations.
+              </p>
+              <p>
+                To create an account, select "sign up" on the upper right-hand side of the
+                <a href="#"> bit.io home page.</a> Signing up is free!
+              </p>
               <div>
+                <img src="../images/b791e2a-bitdotio_login.gif" alt="gif" width="100%" />
+                <figcaption style="text-align: center">sign up for a free bit.io account.</figcaption>
+              </div>
+              <div>
+                <h4>Upload Your First Data File</h4>
                 <p>
-                  This results in the creation of a new repository called my-new-repo with a single tabled titled
-                  after the CSV: HPI_AT_state. The repository is private by default, meaning other people won't be
-                  able to access the data you've uploaded. You can change the repository to public by clicking the
-                  lock icon on the upper left and then clicking "public."
+                  If you have a CSV file on your computer, you can use it. Otherwise, we recommend trying it out with
+                  the U.S. Federal Housing Finance Association state-level House Price Index data The url is:
+                  https://www.fhfa.gov/DataTools/Downloads/Documents/HPI/HPI_AT_state.csv. To upload, simply click
+                  "create repo," name the repository, and copy the URL into the "Paste a URL" field. If you already have
+                  a CSV, JSON, or Excel file on your computer you'd like to turn into a database table, you can drag and
+                  drop the file anywhere on bit.io to upload the data to an existing repository or to a new repository.
                 </p>
-                <div>
-                  <img src="../images/1fc2fd5-Screen_Shot_2021-09-09_at_1.01.15_PM.png" alt="image" width="100%" />
-                  <figcaption class="text-center">your repository page</figcaption>
+                <span>You can launch a file picker by clicking "choose file" at the top of the page.</span>
+                <div class="text-center">
+                  <img src="../images/165d76e-create_a_repo_2.gif" alt="gif" width="50%"  />
+                  <figcaption>upload data by URL</figcaption>
                 </div>
-                <span>with that done, we can start quering the data right away.</span>
-              </div>
-              <div>
-                <h3>query data</h3>
-                <p>
-                  Let's start simple and use the in-browser SQL query editor to figure out how many years of data are
-                  included in this dataset. We'll use the following SQL query:
-                </p>
-                <div class="row">
-                  <div class="col-1">SQL</div>
-                  <div class="col-11 bg-muted"></div>
-                  <div class="col-11">
-                    <P>SELECT count(DISTINCT column_1)
-                      FROM <span> "<username>/my-new-repo"."HPI_AT_state.csv";</span>
-                    </P>
-                  </div>
-                  <div class="col-1"><i class="fad fa-clipboard"></i></div>
-                </div>
-                <div>
-                  <span>
-                    <pre>Change <username> to your username to try this yourself. Here's what that looks like in the bit.io editor:</pre>
-                  </span>
-                  <div>
-                    <img src="../images/afc318e-query_1.gif" alt="img">
-                    <figcaption>Your first query in the bit.io query editor</figcaption>
-                  </div>
-                  <div>
-                    <div class="row">
-                      <div class="col-1"><i class="fa-solid fa-exclamation"></i></div>
-                      <div class="col-11">
-                        <h3>Fully-Qualified Repo Names</h3>
-                        <p>As noted in the comments when you access the query editor, repositories must be fully
-                          qualified. The full syntax is: "owner/repo"."table". Note, the double quotes around
-                          "owner/repo" and around "table" are required whenever the names have special or a mix of upper
-                          and lower case.
-                          <br>
-                          Your query will not execute successfully if you do not use this fully-qualified table
-                          reference form.
-                        </p>
-                      </div>
+                <div class="container">
+                  <div class="row div-style">
+                    <div class="col-1"><i class="fas fa-info-circle"></i></div>
+                    <div class="col-11">
+                      <h5>table header</h5>
+                      <p>
+                        When uploading data, you can select whether the presence of a table header should be
+                        auto-detected, the first row should be used as a table header, or there is no table header. In
+                        this case, auto-detection correctly concluded that there was no table header and assigned
+                        generic column names.
+                      </p>
                     </div>
                   </div>
-                  <div class="pt-2">
-                    <h3>more advanced queries </h3>
-                    <p>
-                      just about anything you can do with PostgresSQL is possible in bit.io, including more
-                      sophisticated queries. You're certainly not limited to counting rows! <br>
-                      it sure be nice if our table has column names. let's add them, we will us the following query:
-                    </p>
-                    <div class="row">
-                      <div class="col-1">
-                        <P>SQL</P>
-                      </div>
-                      <div class="col-11 "></div>
-                      <div class="col-11">
-                        <pre>ALTER TABLE "<username>/my-new-repo"."HPI_AT_state.csv"
-                              RENAME COLUMN column_0 TO "state";
-                              
-                              ALTER TABLE "<username>/my-new-repo"."HPI_AT_state.csv"
-                              RENAME COLUMN column_1 TO "year";
-                              
-                              ALTER TABLE "<username>/my-new-repo"."HPI_AT_state.csv"
-                              RENAME COLUMN column_2 TO "quarter";
-                            </pre>
-                      </div>
-                      <div class="col-1"><i class="fa-solid fa-exclamation"></i></div>
+                </div>
+                <div>
+                  <p>
+                    This results in the creation of a new repository called my-new-repo with a single tabled titled
+                    after the CSV: HPI_AT_state. The repository is private by default, meaning other people won't be
+                    able to access the data you've uploaded. You can change the repository to public by clicking the
+                    lock icon on the upper left and then clicking "public."
+                  </p>
+                  <div class="text-center">
+                    <img src="../images/1fc2fd5-Screen_Shot_2021-09-09_at_1.01.15_PM.png" alt="image" width="75%" />
+                    <figcaption class="text-center">your repository page</figcaption>
+                  </div>
+                  <span>with that done, we can start quering the data right away.</span>
+                </div>
+                <div>
+                  <h3>query data</h3>
+                  <p>
+                    Let's start simple and use the in-browser SQL query editor to figure out how many years of data are
+                    included in this dataset. We'll use the following SQL query:
+                  </p>
+                  <div class="row">
+                    <div class="col-1 bg-white">SQL</div>
+                    <div class="col-11 bg-secondary"></div>
+                    <div class="col-11 bg-white">
+                      <P><span class="text-primary">SELECT count(DISTINCT</span>  column_1) <br>
+                       <span class="text-primary"> FROM</span> <code> "< username >/my-new-repo"."HPI_AT_state.csv"</code>;
+                      </P>
+                    </div>
+                    <div class="col-1 bg-white"><i class="fad fa-clipboard"></i></div>
+                  </div>
+                  <div>
+                    <span>
+                      <pre>Change <username> to your username to try this yourself. Here's what that looks like in the bit.io editor:</pre>
+                    </span>
+                    <div>
+                      <img src="../images/afc318e-query_1.gif" alt="img">
+                      <figcaption>Your first query in the bit.io query editor</figcaption>
                     </div>
                     <div>
+                      <div class="row">
+                        <div class="col-1"><i class="fa-solid fa-exclamation"></i></div>
+                        <div class="col-11">
+                          <h3>Fully-Qualified Repo Names</h3>
+                          <p>As noted in the comments when you access the query editor, repositories must be fully
+                            qualified. The full syntax is: "owner/repo"."table". Note, the double quotes around
+                            "owner/repo" and around "table" are required whenever the names have special or a mix of upper
+                            and lower case.
+                            <br>
+                            Your query will not execute successfully if you do not use this fully-qualified table
+                            reference form.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pt-2">
+                      <h3>more advanced queries </h3>
                       <p>
-                        Note the double quotes around the new column names. Again, to run this yourself, replace
-                        <username> with your bit.io username. Here's what our table looks like now:
+                        just about anything you can do with PostgresSQL is possible in bit.io, including more
+                        sophisticated queries. You're certainly not limited to counting rows! <br>
+                        it sure be nice if our table has column names. let's add them, we will us the following query:
                       </p>
-                      <div>
-                        <img src="../images/9c36c51-Screen_Shot_2021-09-09_at_1.27.51_PM.png" alt="image" width="100%">
-                        <figcaption class="text-center"> Table With Column Names. </figcaption>
+                      <div class="row">
+                        <div class="col-1">
+                          <P>SQL</P>
+                        </div>
+                        <div class="col-11 "></div>
+                        <div class="col-11">
+                          <pre>ALTER TABLE "<username>/my-new-repo"."HPI_AT_state.csv"
+                                RENAME COLUMN column_0 TO "state";
+                                
+                                ALTER TABLE "<username>/my-new-repo"."HPI_AT_state.csv"
+                                RENAME COLUMN column_1 TO "year";
+                                
+                                ALTER TABLE "<username>/my-new-repo"."HPI_AT_state.csv"
+                                RENAME COLUMN column_2 TO "quarter";
+                              </pre>
+                        </div>
+                        <div class="col-1"><i class="fa-solid fa-exclamation"></i></div>
                       </div>
                       <div>
                         <p>
-                          You might notice that we haven't renamed the last column. That's because you can rename
-                          columns without using as SQL at all if you want. Click the little gear icon at the top right
-                          of the table (not the one at the top right of the screen, which includes repository options;
-                          we're interested in table options for now). From there, you can rename columns, rename the
-                          table, or delete the table.
-
+                          Note the double quotes around the new column names. Again, to run this yourself, replace
+                          <username> with your bit.io username. Here's what our table looks like now:
                         </p>
                         <div>
-                          <img src="../images/229c36c51-Screen_Shot_2021-09-09_at_1.27.51_PM (1).png" alt="gif"
-                            width="100%">
-                          <figcaption class="text-center">Modify a Table without SQL</figcaption>
+                          <img src="../images/9c36c51-Screen_Shot_2021-09-09_at_1.27.51_PM.png" alt="image" width="100%">
+                          <figcaption class="text-center"> Table With Column Names. </figcaption>
                         </div>
-                      </div>
-                      <div class=" pt-5" >
-                        <div class="row" style="border-left:3px solid red ;">
-                          <div class="col-1"><i class="fa-solid fa-exclamation"></i></div>
-                          <div class="col-11">
-                            <h3>Deletions are Permanent</h3>
-                            <p>
-                              Be careful! Deleting a repo, table, or column is permanent. Make sure you really want to delete it and that you have a backup if necessary.
-                            </p>
+                        <div>
+                          <p>
+                            You might notice that we haven't renamed the last column. That's because you can rename
+                            columns without using as SQL at all if you want. Click the little gear icon at the top right
+                            of the table (not the one at the top right of the screen, which includes repository options;
+                            we're interested in table options for now). From there, you can rename columns, rename the
+                            table, or delete the table.
+  
+                          </p>
+                          <div>
+                            <img src="../images/229c36c51-Screen_Shot_2021-09-09_at_1.27.51_PM (1).png" alt="gif"
+                              width="100%">
+                            <figcaption class="text-center">Modify a Table without SQL</figcaption>
                           </div>
                         </div>
-                      </div>
-                      <div class="pt-3">
-                        <h3>Add More Data With the API</h3>
-                        <p>
-                          We can use bit.io's REST API to upload another table of data to our repository. One way to do this is:
-
-                        </p>
+                        <div class=" pt-5" >
+                          <div class="row" style="border-left:3px solid red ;">
+                            <div class="col-1"><i class="fa-solid fa-exclamation"></i></div>
+                            <div class="col-11">
+                              <h3>Deletions are Permanent</h3>
+                              <p>
+                                Be careful! Deleting a repo, table, or column is permanent. Make sure you really want to delete it and that you have a backup if necessary.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pt-3">
+                          <h3>Add More Data With the API</h3>
+                          <p>
+                            We can use bit.io's REST API to upload another table of data to our repository. One way to do this is:
+  
+                          </p>
+                          <div class="row">
+                            <div class="col-1">
+                              <P>Shell</P>
+                            </div>
+                            <div class="col-11 "></div>
+                            <div class="col-11">
+                              <pre>curl -i -X POST \
+                                --header 'Authorization: Bearer $TOKEN' \
+                                --header "Content-Disposition: attachment;filename='name'" \
+                                --data-binary @"$PATH_TO_FILE" \
+                                https://import.bit.io/$USERNAME/$REPO_NAME/$TABLE_NAME/
+                              </pre>
+                            </div>
+                            <div class="col-1"><i class="fad fa-clipboard"></i></div>
+                        </div>
+                        <p>where</p>
+                        <ul>
+                          <li>
+                            <code><span>$TOKEN</span></code> -  an authentication token, which you can get from clicking "Connect" after you've logged in. 
+                          </li>
+                          <li>
+                            <code><span>$PATH_TO_FILE</span></code>  - the path to the file you want to upload on your local filesystem,
+                          </li>
+                          <li>
+                            <code><span>$USERNAME</span></code> - the username of the owner of the repo.
+                          </li>
+                          <li>
+                            <code><span>$REPO_NAME</span></code> - the name of the repo.
+                          </li>
+                          <li>
+                            <code><span>$TABLE_NAME</span></code> - the name of the table to upload the data to. if this table does not exist, one will be created.
+                          </li>
+                        </ul>
+                        <p>We'll upload another table from the FHFA: <br> https://www.fhfa.gov/DataTools/Downloads/Documents/HPI/HPI_AT_us_and_census.csv. After downloading the file to our machine, we can push it to the repo with the API as follows:</p>
                         <div class="row">
                           <div class="col-1">
-                            <P>Shell</P>
+                            <P>shell</P>
                           </div>
                           <div class="col-11 "></div>
                           <div class="col-11">
                             <pre>curl -i -X POST \
                               --header 'Authorization: Bearer $TOKEN' \
-                              --header "Content-Disposition: attachment;filename='name'" \
-                              --data-binary @"$PATH_TO_FILE" \
-                              https://import.bit.io/$USERNAME/$REPO_NAME/$TABLE_NAME/
+                              --header "Content-Disposition: attachment;filename='hpi2.csv'" \
+                              --data-binary @"/Users/bitdotio/downloads/hpi2.csv" \
+                              https://import.bit.io/bitdotio/my-new-repo/hpi_census_div
                             </pre>
                           </div>
                           <div class="col-1"><i class="fad fa-clipboard"></i></div>
-                      </div>
-                      <p>where</p>
-                      <ul>
-                        <li>
-                          <code><span>$TOKEN</span></code> -  an authentication token, which you can get from clicking "Connect" after you've logged in. 
-                        </li>
-                        <li>
-                          <code><span>$PATH_TO_FILE</span></code>  - the path to the file you want to upload on your local filesystem,
-                        </li>
-                        <li>
-                          <code><span>$USERNAME</span></code> - the username of the owner of the repo.
-                        </li>
-                        <li>
-                          <code><span>$REPO_NAME</span></code> - the name of the repo.
-                        </li>
-                        <li>
-                          <code><span>$TABLE_NAME</span></code> - the name of the table to upload the data to. if this table does not exist, one will be created.
-                        </li>
-                      </ul>
-                      <p>We'll upload another table from the FHFA: <br> https://www.fhfa.gov/DataTools/Downloads/Documents/HPI/HPI_AT_us_and_census.csv. After downloading the file to our machine, we can push it to the repo with the API as follows:</p>
-                      <div class="row">
-                        <div class="col-1">
-                          <P>shell</P>
                         </div>
-                        <div class="col-11 "></div>
-                        <div class="col-11">
-                          <pre>curl -i -X POST \
-                            --header 'Authorization: Bearer $TOKEN' \
-                            --header "Content-Disposition: attachment;filename='hpi2.csv'" \
-                            --data-binary @"/Users/bitdotio/downloads/hpi2.csv" \
-                            https://import.bit.io/bitdotio/my-new-repo/hpi_census_div
-                          </pre>
-                        </div>
-                        <div class="col-1"><i class="fad fa-clipboard"></i></div>
                       </div>
-                    </div>
-                    <div class="pt-5">
-                      <p>See here for more details on uploading data with the API.</p>
-                      <div class="pt-2" style="background-color: #fdbd2866; border-left: 2px solid #fdbd28ec;">
-                        <div class="row p-5">
-                          <div class="col-1"><i class="fa-solid fa-circle-exclamation"></i></div>
-                          <div class="col-11 " >
-                            <h3 style="color: rgba(54, 54, 235, 0.61);">API Keys and PostgreSQL Connection Details</h3>
-                            <p>
-                              On any repository page, when you're signed in, you can click on the "connect" button on the upper left to access API keys and PostgreSQL connection details.
-                            </p>
+                      <div class="pt-5">
+                        <p>See here for more details on uploading data with the API.</p>
+                        <div class="pt-2" style="background-color: #fdbd2866; border-left: 2px solid #fdbd28ec;">
+                          <div class="row p-5">
+                            <div class="col-1"><i class="fa-solid fa-circle-exclamation"></i></div>
+                            <div class="col-11 " >
+                              <h3 style="color: rgba(54, 54, 235, 0.61);">API Keys and PostgreSQL Connection Details</h3>
+                              <p>
+                                On any repository page, when you're signed in, you can click on the "connect" button on the upper left to access API keys and PostgreSQL connection details.
+                              </p>
+                            </div>
                           </div>
+                          <div>
+                            <img src="../images/ae43806-connect_gif.gif" alt="gif">
+                            <figcaption class="text-center">Getting Your API Key.</figcaption>
+                          </div>
+                          <h3 class="pt-3">Downloading Data</h3>
+                          <p class="pt-2">
+                            You can click the "Download Repo" button to download one or more tables from your repository as CSV, JSON, or Excel files. You can find much more information on downloading tables—and query results—<a href="#">here.</a> 
+                          </p>
+                          <div>
+                            <img src="../images/100ba03-ebd53d3-download_csv.gif" alt="gif" width="100%">
+                            <figcaption class="text-center">Download repository tables using the "Download Repo" button.</figcaption>
+                          </div> 
                         </div>
-                        <div>
-                          <img src="../images/ae43806-connect_gif.gif" alt="gif">
-                          <figcaption class="text-center">Getting Your API Key.</figcaption>
-                        </div>
-                        <h3 class="pt-3">Downloading Data</h3>
-                        <p class="pt-2">
-                          You can click the "Download Repo" button to download one or more tables from your repository as CSV, JSON, or Excel files. You can find much more information on downloading tables—and query results—<a href="#">here.</a> 
+                      </div>
+                      <div class="p-3">
+                        <h3>Documentation</h3>
+                        <p>
+                          bit.io offers the capability to document your repositories and tables with an in-browser markdown editor. You can document specific columns, provide citations and license information,
+                          and embed images—anything that will help you keep track what your data means or will provide value to other accessing your data (if public). <br>
+  
+                          The neiss repository provides a good example of the capabilities of bit.io's documentation editor:
                         </p>
                         <div>
-                          <img src="../images/100ba03-ebd53d3-download_csv.gif" alt="gif" width="100%">
-                          <figcaption class="text-center">Download repository tables using the "Download Repo" button.</figcaption>
-                        </div> 
+                          <img src="../images/2d5780d-Screen_Shot_2021-09-09_at_2.34.34_PM.png" alt="image" width="100%">
+                          <figcaption>In-browser documentation editor</figcaption>
+                        </div>
+                        <h4 class="pt-2">Connecting to a SQL Client</h4>
+                        <p>
+                          Thus far, we've only accessed our data through the browser interface. But we can do so much more. Do you have a preferred SQL client? You can connect it to bit.io 
+                          in the same way as you'd connect to any other PostgreSQL database. The necessary credentials are under the "POSTGRES" section of the "Connect" menu referenced above. 
+                          Here are some details on connecting via SQL clients: <a href="#">Connecting via SQL Clients.</a><br>
+  
+                          For example, here's how the bit.io credentials map onto the PostgresSQL connection in PopSQL.
+                          
+                        </p>
+                        <div>
+                          <img src="../images/f087a61-popsql_connect.png" alt="image" width="100%">
+                          <figcaption class="text-center">Connecting to SQL Clients</figcaption>
+                        </div>
+                        <h4 class="pt-2">what's Next?</h4>
+                        <p>
+                          After reading this guide, you can upload data to bit.io via the browser or the API; 
+                          query data using the in-browser query editor or your favorite SQL client; document your data; 
+                          and modify your tables with the table settings. While this is enough to get started, there's 
+                          much more you can do with bit.io. You can use a bit.io repository as in your data analyses 
+                          with <a href="#">R</a>  or <a href="#">Python;</a>  upload and access your data with the <a href="#"> command line tool,</a> and set up 
+                           <a href="#">automated pipelines</a> to keep your data up to date.
+                        </p>
+                        <p class="pt-3">Our documentation also includes a wealth of example projects which serve as great jumping-off points for your own projects. Two great examples are:</p>
+                        <ul>
+                          <li><a href="#"></a>Examples: LoT and Logging </li>
+                          <li><a href="#">Examples: SQL Queries</a></li>
+                        </ul>
+                        <h3 class="pt-3">Getting Help </h3>
+                        <p class="pt-2">Have you run into an issue not covered by these docs? Have an error message you can't decode? Want to give us some feedback? Help is always one click away!</p>
+                        <div>
+                          <img src="../images/85ba35f-get_help.gif" alt="gif" width="100%">
+                          <figcaption class="text-center">Let us know how we can help!</figcaption>
+                        </div>
                       </div>
+                      <hr>
                     </div>
-                    <div class="p-3">
-                      <h3>Documentation</h3>
-                      <p>
-                        bit.io offers the capability to document your repositories and tables with an in-browser markdown editor. You can document specific columns, provide citations and license information,
-                        and embed images—anything that will help you keep track what your data means or will provide value to other accessing your data (if public). <br>
-
-                        The neiss repository provides a good example of the capabilities of bit.io's documentation editor:
-                      </p>
-                      <div>
-                        <img src="../images/2d5780d-Screen_Shot_2021-09-09_at_2.34.34_PM.png" alt="image" width="100%">
-                        <figcaption>In-browser documentation editor</figcaption>
-                      </div>
-                      <h4 class="pt-2">Connecting to a SQL Client</h4>
-                      <p>
-                        Thus far, we've only accessed our data through the browser interface. But we can do so much more. Do you have a preferred SQL client? You can connect it to bit.io 
-                        in the same way as you'd connect to any other PostgreSQL database. The necessary credentials are under the "POSTGRES" section of the "Connect" menu referenced above. 
-                        Here are some details on connecting via SQL clients: <a href="#">Connecting via SQL Clients.</a><br>
-
-                        For example, here's how the bit.io credentials map onto the PostgresSQL connection in PopSQL.
-                        
-                      </p>
-                      <div>
-                        <img src="../images/f087a61-popsql_connect.png" alt="image" width="100%">
-                        <figcaption class="text-center">Connecting to SQL Clients</figcaption>
-                      </div>
-                      <h4 class="pt-2">what's Next?</h4>
-                      <p>
-                        After reading this guide, you can upload data to bit.io via the browser or the API; 
-                        query data using the in-browser query editor or your favorite SQL client; document your data; 
-                        and modify your tables with the table settings. While this is enough to get started, there's 
-                        much more you can do with bit.io. You can use a bit.io repository as in your data analyses 
-                        with <a href="#">R</a>  or <a href="#">Python;</a>  upload and access your data with the <a href="#"> command line tool,</a> and set up 
-                         <a href="#">automated pipelines</a> to keep your data up to date.
-                      </p>
-                      <p class="pt-3">Our documentation also includes a wealth of example projects which serve as great jumping-off points for your own projects. Two great examples are:</p>
-                      <ul>
-                        <li><a href="#"></a>Examples: LoT and Logging </li>
-                        <li><a href="#">Examples: SQL Queries</a></li>
-                      </ul>
-                      <h3 class="pt-3">Getting Help </h3>
-                      <p class="pt-2">Have you run into an issue not covered by these docs? Have an error message you can't decode? Want to give us some feedback? Help is always one click away!</p>
-                      <div>
-                        <img src="../images/85ba35f-get_help.gif" alt="gif" width="100%">
-                        <figcaption class="text-center">Let us know how we can help!</figcaption>
-                      </div>
-                    </div>
-                    <hr>
                   </div>
-                </div>
-                <div>
-                  <h4>What's Next</h4>
-                  <p>
-                    this has been a whirlwind tour of the core features of bit.io.there is so much more to explore.
-                    browse through the docs for topics relevant to your use case, or check out these articles on popular interogations on bit.io.
-
-                  </p>
-                  <table>
-                    <tr>
-                      <td>
-                        <li>
-                          <a href="#">connecting via R with RPostgres</a>
-                        </li>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <li>
-                           <a href="#">the phyton SDK</a>
-                        </li>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <li>
-                           <a href="#">using bit, the command line tool</a>
-                        </li>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <li>
-                           <a href="#">connecting via powerBI</a>
-                        </li>
-                       
-                      </td>
-                    </tr>
-                  </table>
+                  <div>
+                    <div class="row">
+                       <h4>What's Next</h4>
+                    <p>
+                      this has been a whirlwind tour of the core features of bit.io.there is so much more to explore.
+                      browse through the docs for topics relevant to your use case, or check out these articles on popular interogations on bit.io.
+  
+                    </p>
+                    <table>
+                      <tr>
+                        <td>
+                          <li>
+                            <a href="#">connecting via R with RPostgres</a>
+                          </li>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <li>
+                             <a href="#">the phyton SDK</a>
+                          </li>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <li>
+                             <a href="#">using bit, the command line tool</a>
+                          </li>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <li>
+                             <a href="#">connecting via powerBI</a>
+                          </li>
+                         
+                        </td>
+                      </tr>
+                    </table>
+                    </div>
+                   
+                  </div>
                 </div>
               </div>
             </div>
+            </div>
           </div>
+           
+          
+          
         </div>
-        <section></section>
-      </div>
 
       <!-- <div class="contianer" data-spy="scroll" data-target=".aside-nav" data-offset="50">gfhsdjhjk</div> -->
   </main>
